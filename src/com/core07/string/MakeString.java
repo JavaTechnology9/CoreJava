@@ -50,22 +50,39 @@ public class MakeString {
 		String message = String.join("%", "Java", "is", "cool");
 		System.out.println(message);*/
 	     // message returned is: "Java-is-cool"
-		char ch[]= {'J','A','V','A'};
-		String s1=new String (ch);
+		/*char ch[]= {'J','A','V','A'};
+		String s1=new String (ch);*/
 		//char[] charArray = s1.toCharArray();
-		for(char charArray:s1.toCharArray())
-			System.out.print(charArray+" ");
-		String s2="Hello";
+		/*for(char charArray:s1.toCharArray())
+			System.out.print(charArray+" ");*/
+		/*String s2="Hello";
 		String s3="Hello";
 		String s4="Good-bye";
 		String s5="HELLO";
-		System.out.println(s2+ " equals: "+ s3+ "->"+s2.equals(s3));
+		String s1=new String (s2);
+		String s6=s1;*/
+		/*System.out.println(s2+ " equals: "+ s3+ "->"+s2.equals(s3));
 		System.out.println(s3+ " equals: "+ s4+ "->"+s3.equals(s4));
 		System.out.println(s4+ " equals: "+ s5+ "->"+s4.equals(s5));
 		System.out.println(s2+ " equals: "+ s5+ "->"+s2.equals(s5));
 		System.out.println(s2+ " equalsIgnoreCase: "+ s5+ "->"+s2.equalsIgnoreCase(s5));
+		if(s2.startsWith("He",1)) System.out.println("it is started with He");
+		if("Foobar".startsWith("Foo")) System.out.println("Given String started with Foo");
+		if("Foobar".endsWith("bar")) System.out.println("it is ended with bar");*/
 		
-
+		/*System.out.println(s1+ " equals "+s2+ "->"+s1.equals(s2));
+		System.out.println(s1+ " == " + s2+ "->"+ (s1==s6));*/
+		//System.out.println(s2.lastIndexOf('l'));
+		
+		String org=" This is a test. This is too. ";
+		String substring = org.substring(6,21);
+		System.out.println(substring);
+		System.out.println(org.concat(" concat").concat(" contact"));
+		System.out.println(org.replace("This", "replace"));
+		System.out.println(org.trim());
+		System.out.println(org.toLowerCase());
+		System.out.println(org.toUpperCase());
+ 
 	}
 
 }
